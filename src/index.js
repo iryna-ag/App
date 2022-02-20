@@ -43,7 +43,7 @@ function showTemperature(response) {
   let descriptionElement = document.querySelector("#temperature-description");
 
   document.querySelector("#temperature-description").innerHTML =
-    response.data.weather.main;
+    response.data.weather[0].main;
 
   iconElement.setAttribute(
     "src",

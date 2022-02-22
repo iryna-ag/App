@@ -31,7 +31,7 @@ let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
 function showTemperature(response) {
-  celsiusTemp = response.data.main.temp;
+  celsiusTemperature = response.data.main.temp;
   let iconElement = document.querySelector("#icon");
   document.querySelector("#city").innerHTML = response.data.name;
   document.querySelector("#temperature").innerHTML = Math.round(

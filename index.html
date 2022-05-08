@@ -18,6 +18,8 @@
   </head>
 
   <body>
+      
+      <div class="weather-app-wrapper">
    <div class="weather-app">
    <form class="search-form" id="search-form">
    <input 
@@ -37,14 +39,14 @@
       </button> 
     </form>
   
-    <h1 id="city"> City Name </h1>
+    <h1 id="city"> Simferopol </h1>
     <h2 id="date"> Date </h2> 
     <h3 id="temperature-description"></h3>
        
      
     
 <div class="row">
-<div class="col-1">
+<div class="col-6">
   <div class="data-entry">
     <img src="http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.pn" id="icon" class="float-left" />
 
@@ -56,16 +58,28 @@
             <ul>
                 <li>Humidity: <span id="humidity"></span>%</li>
                 <li>Wind: <span id="wind"></span> km/h</li>
-              </ul>
+            </ul>
   </div>
 </div>
 </div>
-    </div>
-    <div style="text-align:center">
-<a href="https://github.com/iryna-ag/App">Coded by</a> Iryna Agafonov
-</div>
+    
+     <div class="weather-forecast" id="forecast">
+            <div class="row">
+              <div class="col-2">
+                <div class="weather-forecast-date"></div>
+                <div class="weather-forecast-temp">
+                </div>
+              </div>
+            </div>
+          </div>
+      
+        </div>
+    
 <div class="bg-image">
   <div class="bg-text">
+</div>
+<div style="text-align:center">
+<a href="https://github.com/iryna-ag/App">Coded by</a> Iryna Agafonov
 </div>
 <script src="src/index.js"> </script>
 </body>

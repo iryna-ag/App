@@ -48,7 +48,7 @@ button {
   right: -10px;
 }
 h1 {
-  padding: 18px;
+  padding: 26px;
   font-family: cursive;
   color: darkgreen;
   font-weight: normal;
@@ -59,36 +59,54 @@ h2,
 h3 {
   font-size: 20px;
   margin-left: 20px;
+  padding-top: 20px;
   color: grey;
+  font-family: italic;
+  font-weight: normal;
+  line-height: 0;
 }
 
 .data-entry {
   position: fixed;
-  padding: 18px;
+  padding: 0px;
   right: 550px;
   top: 200px;
-  text-align: center;
 }
 
 .temperature {
   color: darkgreen;
   font-weight: bold;
   font-family: cursive;
-  font-size: 38px;
+  font-size: 40px;
 }
 .units {
   position: relative;
   top: -28px;
 }
 ul {
-  margin: 0 0 10px;
-  padding: 0;
-}
-li {
-  color: grey;
-  font-family: italic;
   font-size: 20px;
-  font-weight: 100;
-  line-height: 1;
+  color: grey;
+  line-height: 1.5;
+  font-family: italic;
+  font-weight: normal;
   list-style: none;
+}
+
+.weather-forecast {
+  margin-top: 50px;
+  text-align: center;
+  color: #000;
+}
+
+.weather-forecast-date {
+  font-size: 20px;
+  opacity: 1;
+}
+
+.weather-forecast-temperature-min {
+  opacity: 1;
+}
+
+.weather-forecast-temperatures {
+  font-size: 12px;
 }
